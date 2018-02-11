@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.rvc.student.week6.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txtInstructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/txtInstructions"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Choose your Free Meal:"
+        app:layout_constraintBottom_toTopOf="@+id/spMealtime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <Spinner
+        android:id="@+id/spMealtime"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/spChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInstructions" />
+
+    <Spinner
+        android:id="@+id/spChoice"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spMealtime" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/txtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spChoice" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="111dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmit" />
+
+
+</android.support.constraint.ConstraintLayout>
